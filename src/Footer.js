@@ -2,10 +2,10 @@ import React from "react";
 import web22 from "../src/images/bottom-image.png";
 function Footer() {
   return (
-    <footer className="bd-footer container py-5">
-      <div className="container-color py-5">
+    <footer style={{ marginTop: "50px" }} className="container-fluid">
+      <div className="container-color p-5">
         <div className="row">
-          <div className="col-4 col-lg-2 col-md-2 col-sm-12 offset-lg-1 offset-md-1 mb-3">
+          <div className="col-3">
             <ul className="list-unstyled">
               <li className="mb-2">
                 <a href="/" className="link-dark nav-link">
@@ -34,7 +34,7 @@ function Footer() {
               </li>
             </ul>
           </div>
-          <div className="col-4 col-md-6 col-sm-10  mb-3">
+          <div className="col-4">
             <p className=" mb-2   h-1">
               JOIN THE HATTELLS FAMILY <br /> RECEIVE OUR UPDATES, STORIES &
               COLLECTION.
@@ -43,42 +43,48 @@ function Footer() {
             <br />
             <input className="input" placeholder="Email Address"></input>
           </div>
-          <div className="col-3 ms-auto  ">
+          <div className="col-5">
             <div className="card container-color card-border">
-              {" "}
-              <img src={web22} className="img-responsive web-22" />
+              <img
+                width="300"
+                src={web22}
+                className="img-responsive web-22"
+                style={{ marginLeft: "100px" }}
+              />
             </div>
           </div>
         </div>
-        <div className="row mx-auto"></div>
-        <div className="col-8 col-sm-12  offset-lg-1 offset-md-1 d-flex space-content-between ">
-          <ul className="list-unstyled d-flex">
-            <li className="ms-3">
-              <a className="link-dark" href="#">
-                (222) 555-0118
-              </a>
-            </li>
-            <li className="ms-3">
-              <a className="link-dark" href="#">
-                hattelles@singapore.com
-              </a>
-            </li>
-            <li className="ms-3">
-              <a className="link-dark" href="#">
-                <ion-icon name="logo-facebook"></ion-icon>
-              </a>
-            </li>
-            <li className="ms-3">
-              <a className="link-dark" href="#">
-                <ion-icon name="logo-instagram"></ion-icon>
-              </a>
-            </li>
-            <li className="ms-3">
-              <a className="link-dark" href="#">
-                <ion-icon name="logo-youtube"></ion-icon>
-              </a>
-            </li>
-          </ul>
+
+        <div className="row" style={{ marginTop: "40px" }}>
+          <div className="col-8 col-sm-12">
+            <ul className="list-unstyled d-flex">
+              <li className="ms-3">
+                <a className="link-dark" href="#">
+                  (222) 555-0118
+                </a>
+              </li>
+              <li className="ms-3">
+                <a className="link-dark" href="#">
+                  hattelles@singapore.com
+                </a>
+              </li>
+              <li className="ms-3">
+                <a className="link-dark" href="#">
+                  <ion-icon name="logo-facebook"></ion-icon>
+                </a>
+              </li>
+              <li className="ms-3">
+                <a className="link-dark" href="#">
+                  <ion-icon name="logo-instagram"></ion-icon>
+                </a>
+              </li>
+              <li className="ms-3">
+                <a className="link-dark" href="#">
+                  <ion-icon name="logo-youtube"></ion-icon>
+                </a>
+              </li>
+            </ul>
+          </div>
         </div>
       </div>
     </footer>

@@ -5,9 +5,12 @@
   box-sizing: border-box;
   font-family: "muli", "sens-sarif";
 }
+img {
+  height: 100%;
+}
 .navbar {
   background-color: #fdf2e6 !important;
-  margin-top: 14rem !important;
+  /* margin-top: 14rem !important; */
 }
 .navbar a {
   font-size: 1.3rem;
@@ -34,27 +37,28 @@
     margin-left: 500px;
   }
   .top-image {
-    margin-left: 160px;
+    margin-left: 60px;
   }
   .web5-img {
-    margin-left: 325px !important;
+    margin: 20px 0 0 380px !important;
   }
   .for-tablet {
-    margin-left: 480px !important;
-    margin-top: 10px !important;
+    margin: 0 0 0 0px !important;
+    height: 250px !important;
   }
   .web-7 {
   }
   .web-9 {
-    width: 65% !important;
-    margin-left: -70px !important;
+    width: 200px !important;
+    margin: 10px 0 0 -55px !important;
   }
   .web-8 {
-    width: 65% !important;
+    width: 200px !important;
+    margin: 10px 0 0 0 !important;
   }
   .web-3 {
-    width: 50% !important;
-    margin-left: 155px !important;
+    height: 200px !important;
+    margin: 10px 0 0 -5px !important;
   }
   .web-11 {
     margin-left: 250px !important;
@@ -70,7 +74,7 @@
     margin-top: 35px !important;
   }
   .carousel-card {
-    width: 11rem !important;
+    width: 20rem !important;
     margin-top: 60px !important;
   }
 
@@ -109,51 +113,39 @@
     font-size: 20px;
   }
   .my-story {
-    margin-top: 20px !important;
+    margin: 20px 0 0 -100px !important;
     font-size: 15px !important;
-    margin-left: -100px !important;
   }
   .my-create {
     font-size: 3px !important;
     margin-left: -100px !important;
   }
   .top-image {
-    width: 450px;
-    padding-right: 100px;
-    padding-top: 30px;
+    height: 300px;
   }
   .web-3 {
-    margin-left: 90px !important;
-    width: 70% !important;
-    margin-top: 5px;
+    margin: -20px 0 0 -10px !important;
+    height: 100px !important;
   }
   .web-9 {
-    width: 100% !important;
-    margin-top: 5px;
+    height: 110px !important;
+    margin: -20px 0 0 -20px !important;
   }
   .web-8 {
-    width: 100% !important;
-    margin-top: 5px;
+    height: 110px !important;
+    margin: -20px 0 0 0 !important;
   }
   .web5-img {
     margin-left: 150px !important;
     margin-top: 20px !important;
   }
-  .for-tablet {
-    width: 100% !important;
-  }
   .for-tablet-h1 {
     font-size: 20px !important;
   }
-  .web-11 {
-  }
-  .tab-mob-container {
-    margin-top: -20px !important;
-    padding-top: -50px !important;
-  }
+
   .for-tablet {
-    margin-left: 260px !important;
-    margin-top: 0px !important;
+    height: 110px !important;
+    margin: -10px 0 0 0 !important;
   }
   .web-11 {
     margin-left: 55px !important;
@@ -231,4 +223,11 @@
 .web-8,
 .web-3 {
   margin-top: 25px;
+}
+
+.abc {
+  height: 400px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }

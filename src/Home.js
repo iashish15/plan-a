@@ -6,7 +6,6 @@ import web3 from "../src/images/Mask_group_3.png";
 import web4 from "../src/images/Frame.png";
 import web5 from "../src/images/Mask_group.png";
 import web6 from "../src/images/photo1.png";
-import web7 from "../src/images/Rectangle.png";
 import web8 from "../src/images/IMG_4641.png";
 import web9 from "../src/images/Page_Blog.png";
 import we99 from "../src/images/Screenshot.png";
@@ -16,7 +15,7 @@ import web11 from "../src/images/Instagram.png";
 function Home() {
   return (
     <>
-      <div className="container nav-bg">
+      <div className="container-fluid nav-bg" style={{ padding: "0" }}>
         <div className="row position-relative">
           <img src={web} alt="" className="img-responsive" />
           <div className="col-8 position-absolute ">
@@ -52,9 +51,9 @@ function Home() {
                     <img src={web3} className="card-img-top" alt="..." />
                     <div
                       className="card text-center carousel-card  position-absolute top-100 start-50 translate-middle"
-                      style={{ width: "18rem" }}
+                      style={{ width: "18rem", backgroundColor: "#F5C9AB" }}
                     >
-                      <div className="card-header">Featured</div>
+                      <div className="card-header">Causal Everyday</div>
                       <div className="card-body">
                         <h5 className="card-title">Special title treatment</h5>
                         <p className="card-text">
@@ -74,9 +73,9 @@ function Home() {
                     <img src={web1} className="card-img-top" alt="..." />
                     <div
                       className="card text-center carousel-card position-absolute top-100 start-50 translate-middle"
-                      style={{ width: "18rem" }}
+                      style={{ width: "18rem", backgroundColor: "#F5C9AB" }}
                     >
-                      <div className="card-header">Featured</div>
+                      <div className="card-header">Black Meets Leather</div>
                       <div className="card-body">
                         <h5 className="card-title">Special title treatment</h5>
                         <p className="card-text">
@@ -96,9 +95,9 @@ function Home() {
                     <img src={web2} className="card-img-top" alt="..." />
                     <div
                       className="card text-center carousel-card  position-absolute top-100 start-50 translate-middle"
-                      style={{ width: "18rem" }}
+                      style={{ width: "18rem", backgroundColor: "#F5C9AB" }}
                     >
-                      <div className="card-header">Featured</div>
+                      <div className="card-header">Straight up!</div>
                       <div className="card-body">
                         <h5 className="card-title">Special title treatment</h5>
                         <p className="card-text">
@@ -142,13 +141,13 @@ function Home() {
           </div>
         </div>
       </div>
-      <div className="container tab-mob-container nav-bg mb-5">
+      <div className="container-fluid tab-mob-container nav-bg mb-5">
         <div className="row position-relative ">
           <img src={web4} alt="" className="mt-5 " />
           <img
             src={web5}
             className="img-responsive web5-img  position-absolute w-50 p-0 border border-white border-5"
-            style={{ marginLeft: "500px" }}
+            style={{ margin: "20px 0 0 530px" }}
             alt=""
           />
           <div className="col-8  position-absolute ">
@@ -165,57 +164,67 @@ function Home() {
           </div>
         </div>
       </div>
-      <div className="container tab-mob-container nav-bg pt-5">
-        <div className="row tab-mob-container positon-relative">
-          <img src={web6} alt="" style={{ marginTop: "50px" }} />
+
+      <section id="travel">
+        <div className="container">
+          <div className="row tab-mob-container positon-relative">
+            <img src={web6} alt="" style={{ marginTop: "70px" }} />
+          </div>
         </div>
-        <div className="row ">
-          <img
-            src={web7}
-            alt=""
-            className="position-relative web-7 img-responsive h-75"
-          />
-          <div className="col-8  position-absolute">
-            <div className="row" style={{ justifyContent: "space-between" }}>
-              <div className="col-5 ">
-                <img
-                  src={web8}
-                  alt=""
-                  className="img-responsive web-8 border border-white border-5 "
-                  style={{ width: "75%", marginLeft: "20px" }}
-                />
-              </div>
-              <div className="col-5">
-                <img
-                  src={web9}
-                  alt=""
-                  className="img-responsive web-9  border border-white border-5  "
-                  style={{ width: "75%" }}
-                />
+      </section>
+      <section
+        id="how-to-order"
+        style={{ backgroundColor: "#e7dcd1", height: "80%" }}
+      >
+        <div className="container-fluid tab-mob-container nav-bg pt-5">
+          <div className="row ">
+            <div className="col-8" style={{ position: "relative" }}>
+              <div className="row">
+                <div className="col-8">
+                  <img
+                    src={web8}
+                    alt=""
+                    className="img-responsive web-8 border border-white border-5 "
+                    style={{ height: "80%" }}
+                  />
+                </div>
+                <div className="col-4">
+                  <img
+                    src={web9}
+                    alt=""
+                    className="img-responsive web-9  border border-white border-5  "
+                    style={{ height: "80%" }}
+                  />
+                </div>
+
+                <div style={{ position: "absolute", left: "32%", top: "4%" }}>
+                  <img
+                    src={web3}
+                    alt=""
+                    className="img-responsive web-3  border  border-white border-5"
+                    style={{ height: "350px" }}
+                  />
+                </div>
               </div>
             </div>
-          </div>
-          <div className="col-4 position-absolute mt-3">
-            <img
-              src={web3}
-              alt=""
-              className="img-responsive web-3  border  border-white border-5  "
-              style={{ width: "65%", marginLeft: "250px" }}
-            />
-          </div>
-          <div className="col-4 position-absolute mt-3">
-            <img
-              src={we99}
-              alt=""
-              className="img-responsive for-tablet "
-              style={{ width: "70%", marginLeft: "800px", marginTop: "25px" }}
-            />
+
+            <div style={{ padding: "0 0 0 20px" }} className="col-4">
+              <img
+                src={we99}
+                alt=""
+                className="img-responsive for-tablet "
+                style={{ height: "60%" }}
+              />
+            </div>
           </div>
         </div>
+      </section>
+      <div className="container">
         <div className="row mt-5">
           <div className="col-8 line mx-auto "></div>
         </div>
       </div>
+
       <div className="container tab-mob-container nav-bg mt-5">
         <div className="row mt-4">
           <div className="col-2 col-sm-12 ">
