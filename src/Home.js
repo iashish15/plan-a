@@ -36,11 +36,190 @@ function Home() {
           </div>
         </div>
       </div>
-      <div className="container nav-bg mb-5">
+      <div className="container nav-bg mb-5 carousel-for-laptop">
         <div className="row ">
-          <div className="col-lg-4  col-md-8 mx-auto">
+          <div className="col-12 mx-auto">
             <div
               id="carouselExampleControls"
+              className="carousel slide"
+              data-bs-ride="carousel"
+              mx-auto
+            >
+              <div className="carousel-inner">
+                <div className="carousel-item active">
+                  <div className="card-wrapper">
+                    <div className="card position-relative">
+                      <img src={web3} className="card-img-top" alt="..." />
+                      <div
+                        className="card text-center carousel-card  position-absolute top-100 start-50 translate-middle"
+                        style={{ width: "18rem", backgroundColor: "#F5C9AB" }}
+                      >
+                        <div className="card-header">Causal Everyday</div>
+                        <div className="card-body">
+                          <h5 className="card-title">
+                            Special title treatment
+                          </h5>
+                          <p className="card-text">
+                            With supporting text below as a natural lead-in to
+                            additional content.
+                          </p>
+                          <a href="#" className="btn btn-primary">
+                            Go somewhere
+                          </a>
+                        </div>
+                        <div className="card-footer text-muted">2 days ago</div>
+                      </div>
+                    </div>
+                    <div className="card position-relative">
+                      <img src={web1} className="card-img-top" alt="..." />
+                      <div
+                        className="card text-center carousel-card  position-absolute top-100 start-50 translate-middle"
+                        style={{ width: "18rem", backgroundColor: "#F5C9AB" }}
+                      >
+                        <div className="card-header">Causal Everyday</div>
+                        <div className="card-body">
+                          <h5 className="card-title">
+                            Special title treatment
+                          </h5>
+                          <p className="card-text">
+                            With supporting text below as a natural lead-in to
+                            additional content.
+                          </p>
+                          <a href="#" className="btn btn-primary">
+                            Go somewhere
+                          </a>
+                        </div>
+                        <div className="card-footer text-muted">2 days ago</div>
+                      </div>
+                    </div>
+                    <div className="card position-relative">
+                      <img src={web2} className="card-img-top" alt="..." />
+                      <div
+                        className="card text-center carousel-card  position-absolute top-100 start-50 translate-middle"
+                        style={{ width: "18rem", backgroundColor: "#F5C9AB" }}
+                      >
+                        <div className="card-header">Causal Everyday</div>
+                        <div className="card-body">
+                          <h5 className="card-title">
+                            Special title treatment
+                          </h5>
+                          <p className="card-text">
+                            With supporting text below as a natural lead-in to
+                            additional content.
+                          </p>
+                          <a href="#" className="btn btn-primary">
+                            Go somewhere
+                          </a>
+                        </div>
+                        <div className="card-footer text-muted">2 days ago</div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <div className="carousel-item ">
+                  <div className="card-wrapper">
+                    <div className="card position-relative">
+                      <img src={web1} className="card-img-top" alt="..." />
+                      <div
+                        className="card text-center carousel-card position-absolute top-100 start-50 translate-middle"
+                        style={{ width: "18rem", backgroundColor: "#F5C9AB" }}
+                      >
+                        <div className="card-header">Black Meets Leather</div>
+                        <div className="card-body">
+                          <h5 className="card-title">
+                            Special title treatment
+                          </h5>
+                          <p className="card-text">
+                            With supporting text below as a natural lead-in to
+                            additional content.
+                          </p>
+                          <a href="#" className="btn btn-primary">
+                            Go somewhere
+                          </a>
+                        </div>
+                        <div className="card-footer text-muted">2 days ago</div>
+                      </div>
+                    </div>
+                    <div className="card position-relative">
+                      <img src={web3} className="card-img-top" alt="..." />
+                      <div
+                        className="card text-center carousel-card position-absolute top-100 start-50 translate-middle"
+                        style={{ width: "18rem", backgroundColor: "#F5C9AB" }}
+                      >
+                        <div className="card-header">Black Meets Leather</div>
+                        <div className="card-body">
+                          <h5 className="card-title">
+                            Special title treatment
+                          </h5>
+                          <p className="card-text">
+                            With supporting text below as a natural lead-in to
+                            additional content.
+                          </p>
+                          <a href="#" className="btn btn-primary">
+                            Go somewhere
+                          </a>
+                        </div>
+                        <div className="card-footer text-muted">2 days ago</div>
+                      </div>
+                    </div>
+                    <div className="card position-relative">
+                      <img src={web2} className="card-img-top" alt="..." />
+                      <div
+                        className="card text-center carousel-card position-absolute top-100 start-50 translate-middle"
+                        style={{ width: "18rem", backgroundColor: "#F5C9AB" }}
+                      >
+                        <div className="card-header">Black Meets Leather</div>
+                        <div className="card-body">
+                          <h5 className="card-title">
+                            Special title treatment
+                          </h5>
+                          <p className="card-text">
+                            With supporting text below as a natural lead-in to
+                            additional content.
+                          </p>
+                          <a href="#" className="btn btn-primary">
+                            Go somewhere
+                          </a>
+                        </div>
+                        <div className="card-footer text-muted">2 days ago</div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <button
+                className="carousel-control-prev"
+                type="button"
+                data-bs-target="#carouselExampleControls"
+                data-bs-slide="prev"
+              >
+                <span
+                  className="carousel-control-prev-icon"
+                  aria-hidden="false"
+                ></span>
+                <span className="visually-hidden">Previous</span>
+              </button>
+              <button
+                className="carousel-control-next"
+                type="button"
+                data-bs-target="#carouselExampleControls"
+                data-bs-slide="next"
+              >
+                <span
+                  className="carousel-control-next-icon"
+                  aria-hidden="true"
+                ></span>
+                <span className="visually-hidden">Next</span>
+              </button>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div className="container nav-bg mb-5 carousel-for-tablet">
+        <div className="row ">
+          <div className="col-md-8 mx-auto">
+            <div
+              id="carouselExampleControls1"
               className="carousel slide"
               data-bs-ride="carousel"
               mx-auto
@@ -128,7 +307,7 @@ function Home() {
               <button
                 className="carousel-control-next"
                 type="button"
-                data-bs-target="#carouselExampleControls"
+                data-bs-target="#carouselExampleControls1"
                 data-bs-slide="next"
               >
                 <span
